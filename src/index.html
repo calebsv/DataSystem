@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataAluno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="author" content="Gabriel Damião e Caleb Lira">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+            ceu:'#CBF0F8',
+            bm:'#315cfd',
+        },
+        fontFamily: {
+            out:['Outfit', 'sans-serif'],
+            int:['Inter','sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+</head>
+
+<body class="page-bg min-h-screen flex items-center justify-center p-6">
+    <main class="anim-card glow-card w-full max-w-5xl rounded-3xl border overflow-hidden flex">
+        <section class="relative hidden md:block w-1/2 overflow-hidden">
+            <div class="bg-gradient-to-r from-transparent to-black">
+                <img src="gradient.jpg" class="anim-photo absolute inset-0 w-full h-full object-cover" alt="TROCAR DEPOIS">
+            </div>
+        </section>
+
+        <section class="w-full md:w-1/2 bg-white/60 backdrop-blur-md p-12">
+            <div class="mx-auto max-w-sm flex flex-col items-center gap-6 text-center mb-4">
+                <h1 class="anim-title text-3xl font-bold text-black font-out">Seja <span class="text-bm">Bem-Vindo!</span></h1>
+            </div>
+            <form class="anim-form w-full flex flex-col gap-2">
+                <div class="field">
+                    <input type="text" name="user" id="user" placeholder=" " autocomplete="name" class="field-input w-full rounded-lg bg-black/40 px-4 py-3 text-white font-int">
+                    <label for="user" class="field-label font-int">Nome</label>
+                </div>
+
+                <div class="field">
+                    <input type="email" name="email" id="email" placeholder=" " autocomplete="email" class="field-input w-full rounded-lg bg-black/40 px-4 py-3 text-white font-int">
+                    <label for="email" class="field-label font-int">Email</label>
+                </div>
+
+                <div class="field">
+                    <input type="password" name="senha" id="password" placeholder=" " autocomplete="current-password" class="field-input w-full rounded-lg bg-black/40 px-4 py-3 text-white font-int">
+                    <label for="password" class="field-label font-int">Senha</label>
+                </div>
+
+                <div class="flex items-center justify-center pt-2">
+                    <button class="font-bold font-int">Entrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
