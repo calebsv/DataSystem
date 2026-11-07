@@ -1,4 +1,4 @@
-button {
+.btn-entrar {
   width: 150px;
   height: 60px;
   border: 3px solid #315cfd;
@@ -10,7 +10,7 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+.btn-entrar:hover {
   background: #315cfd;
   color: white;
   font-size: 1.5em;
@@ -155,7 +155,6 @@ button:hover {
 .anim-form > *:nth-child(4) {
   animation-delay: 1.05s;
 }
-.page-bg
 @keyframes glowPulse {
   from {
     border-color: rgba(255, 255, 255, 0.7);
